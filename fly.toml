@@ -16,8 +16,10 @@ primary_region = "lhr"
   release_command = "migrate -y"
 
 [env]
-  WEBSITE_URL = "https://steampress.fly.dev"
+  SP_WEBSITE_URL = "https://steampress.fly.dev"
   DATABASE_CLIENT = "psql"
+  # SP_BLOG_PATH = "blog"
+  # `DATABASE_URL` already set using `fly pg attach`
 
 [http_service]
   internal_port = 8080
